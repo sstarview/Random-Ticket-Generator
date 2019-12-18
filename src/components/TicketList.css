@@ -1,0 +1,20 @@
+.TicketList {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0 10px;
+  /* min-width: 60vw; */
+  /* min-height: 40vh; */
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.TicketList h4 {
+  text-align: left;
+}
+
+.TicketList-ticket {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 10px 0 10px;
+}
