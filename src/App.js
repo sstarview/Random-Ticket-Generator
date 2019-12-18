@@ -81,7 +81,6 @@ class App extends React.Component {
       input: number.toString(),
       id: uuid()
     });
-    console.log(this.state);
   };
 
   render() {
