@@ -37,7 +37,12 @@ class App extends React.Component {
       ticket: this.state.input
     };
 
-    if (this.state.input.length === 6 && this.state.ticket.length < 5) {
+    if (
+      this.state.input.length === 6 &&
+      this.state.ticket.length < 5 &&
+      Number(this.state.input) &&
+      Number(this.state.input) > 100000
+    ) {
       const updatedTicket = [...this.state.ticket, newTicket];
       console.log(newTicket);
       this.setState({
